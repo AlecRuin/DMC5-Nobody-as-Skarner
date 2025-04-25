@@ -103,9 +103,6 @@ entries: map[hash,embed] = {
                     }
                 }
                 BankUnit {
-                    name: string = "Skarner_Base_SFX_OutOfGame"
-                }
-                BankUnit {
                     name: string = "Skarner_Base_VO"
                     bankPath: list[string] = {
                         "ASSETS/Sounds/Wwise2016/VO/en_US/Characters/Skarner/Skins/Base/Skarner_Base_VO_audio.bnk"
@@ -285,7 +282,7 @@ entries: map[hash,embed] = {
             "ASSETS/Characters/Skarner/HUD/Skarner_Square_0.Skarner_Rework.dds"
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
-            unitHealthBarStyle: u8 = 11
+            unitHealthBarStyle: u8 = 12
         }
         mResourceResolver: link = "Characters/Skarner/Skins/Skin0/Resources"
     }
@@ -322,7 +319,6 @@ entries: map[hash,embed] = {
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
                 blendMode: u8 = 3
                 particleIsLocalOrientation: flag = true
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 0, 60 }
@@ -365,7 +361,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_AirTrail07.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_AirTrail07.scb"
                     }
                 }
                 blendMode: u8 = 1
@@ -411,7 +407,7 @@ entries: map[hash,embed] = {
                     }
                     erosionFeatherIn: f32 = 0.300000012
                     erosionFeatherOut: f32 = 0.300000012
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.dds"
                     erosionMapAddressMode: u8 = 0
                 }
                 disableBackfaceCull: bool = true
@@ -482,7 +478,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.dds"
                 particleUVScrollRate: embed = IntegratedValueVector2 {
                     constantValue: vec2 = { 0, 1 }
                     dynamics: pointer = VfxAnimatedVector2fVariableData {
@@ -498,7 +494,7 @@ entries: map[hash,embed] = {
                     constantValue: vec2 = { 3, 0.699999988 }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_Sheen2.Skarner_Rework.dds"
+                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_Sheen2.dds"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 2, 1 }
                     }
@@ -529,7 +525,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_AirTrail07.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_AirTrail07.scb"
                     }
                 }
                 blendMode: u8 = 1
@@ -579,7 +575,7 @@ entries: map[hash,embed] = {
                     }
                     erosionFeatherIn: f32 = 0.300000012
                     erosionFeatherOut: f32 = 0.300000012
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.dds"
                     erosionMapAddressMode: u8 = 0
                 }
                 disableBackfaceCull: bool = true
@@ -649,7 +645,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.dds"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, 2 }
                 }
@@ -665,7 +661,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_Sheen2.Skarner_Rework.dds"
+                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_Sheen2.dds"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 2, 1 }
                     }
@@ -728,7 +724,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_sk.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_sk.scb"
                     }
                 }
                 blendMode: u8 = 1
@@ -772,7 +768,7 @@ entries: map[hash,embed] = {
                     }
                     erosionFeatherOut: f32 = 0.150000006
                     erosionSliceWidth: f32 = 1
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_P_Erode.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_P_Erode.dds"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 0, 0, 1, 0 }
                     }
@@ -841,7 +837,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Noise3.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Noise3.dds"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0.75, 0 }
                 }
@@ -911,7 +907,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 220, 180, 0 }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Missile_Head_2.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Missile_Head_2.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -958,7 +954,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.scb"
                     }
                 }
                 blendMode: u8 = 3
@@ -968,7 +964,6 @@ entries: map[hash,embed] = {
                 pass: i16 = -100
                 miscRenderFlags: u8 = 1
                 particleIsLocalOrientation: flag = true
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 0, 270 }
@@ -976,7 +971,7 @@ entries: map[hash,embed] = {
                 birthRotationalVelocity0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, -480, 0 }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Mat_Eye.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Props_TX_CM.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -1152,7 +1147,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Smoke_Dust_White.Skarner_Rework.tex"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Smoke_Dust_White.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
             }
@@ -1211,7 +1206,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_Dune_1.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_W_Dune_1.scb"
                     }
                 }
                 blendMode: u8 = 1
@@ -1256,7 +1251,7 @@ entries: map[hash,embed] = {
                     }
                     erosionFeatherIn: f32 = 0.349999994
                     erosionFeatherOut: f32 = 0.5
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Erosion.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Erosion.dds"
                 }
                 miscRenderFlags: u8 = 1
                 isGroundLayer: flag = true
@@ -1281,7 +1276,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_GradientV.Skarner_Rework.tex"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_GradientV.tex"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, 0.5 }
                 }
@@ -1411,7 +1406,7 @@ entries: map[hash,embed] = {
                         }
                     }
                     erosionFeatherOut: f32 = 0.300000012
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Trail_Mult.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Trail_Mult.dds"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -1432,7 +1427,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/3026_Items_Trail_06.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/3026_Items_Trail_06.dds"
                 emitterUvScrollRate: vec2 = { 1, 0 }
                 uvScale: embed = ValueVector2 {
                     constantValue: vec2 = { 0.5, 1 }
@@ -1502,7 +1497,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = -50
                 alphaErosionDefinition: pointer = VfxAlphaErosionDefinitionData {
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/common_color-rampdown.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/common_color-rampdown.dds"
                 }
                 ParticlesShareRandomValue: flag = true
                 birthScale0: embed = ValueVector3 {
@@ -1520,7 +1515,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Trail.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Trail.dds"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, 1 }
                 }
@@ -1542,7 +1537,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.scb"
                         mSubmeshesToDraw: list[hash] = {
                             "stone"
                         }
@@ -1572,7 +1567,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = -85
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionFresnel: f32 = 0.100000001
                     reflectionFresnelColor: vec4 = { 0, 0.2399939, 0.209994659, 0 }
@@ -1648,7 +1643,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Gradient.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Gradient.dds"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -1707,7 +1702,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_GroundSmoke02.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_GroundSmoke02.dds"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
             }
@@ -1768,7 +1763,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Gradient.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Gradient.dds"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -1837,7 +1832,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_GroundSmoke02.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_GroundSmoke02.dds"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
             }
@@ -1858,7 +1853,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Skin03_Q_mis_energyflame.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Skin03_Q_mis_energyflame.scb"
                     }
                 }
                 blendMode: u8 = 4
@@ -1911,7 +1906,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Skin03_Q_TrailMult.Skarner_Rework.tex"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Skin03_Q_TrailMult.tex"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { -1.60000002, 0 }
                 }
@@ -1922,7 +1917,7 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 90
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Augment_ParasiticRelationship_2_shape.Skarner_Rework.tex"
+                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Augment_ParasiticRelationship_2_shape.tex"
                     UvRotationMult: embed = ValueFloat {
                         constantValue: f32 = 180
                     }
@@ -1948,7 +1943,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Skin03_Q_mis_energyflame.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Skin03_Q_mis_energyflame.scb"
                     }
                 }
                 blendMode: u8 = 4
@@ -1983,7 +1978,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Augment_ParasiticRelationship_2_shape.Skarner_Rework.tex"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Augment_ParasiticRelationship_2_shape.tex"
                 uvScale: embed = ValueVector2 {
                     constantValue: vec2 = { 1, 0.5 }
                 }
@@ -1991,7 +1986,7 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 180
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.Skarner_Rework.dds"
+                    textureMult: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_R_Wave02_01.dds"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 2, 1 }
                     }
@@ -2017,7 +2012,7 @@ entries: map[hash,embed] = {
                 }
                 primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
-                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.Skarner_Rework.scb"
+                        mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.scb"
                     }
                 }
                 blendMode: u8 = 1
@@ -2027,7 +2022,6 @@ entries: map[hash,embed] = {
                 pass: i16 = -90
                 miscRenderFlags: u8 = 1
                 particleIsLocalOrientation: flag = true
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 0, 270 }
@@ -2035,7 +2029,7 @@ entries: map[hash,embed] = {
                 birthRotationalVelocity0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, -480, 0 }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/AurelionSol_Base_AOE_Shimmer_Mult.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/AurelionSol_Base_AOE_Shimmer_Mult.dds"
                 uvScale: embed = ValueVector2 {
                     constantValue: vec2 = { 1, 0.5 }
                 }
@@ -2092,7 +2086,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = 40
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionOpacityGlancing: f32 = 0.300000012
                     reflectionFresnel: f32 = 0.100000001
@@ -2106,7 +2100,7 @@ entries: map[hash,embed] = {
                 isUniformScale: flag = true
                 texture: string = "ASSETS/Shared/Particles/Library/HitEffect/common_color-hold.dds"
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
-                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.Skarner_Rework.dds"
+                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.dds"
                     paletteSelector: embed = ValueVector3 {
                         constantValue: vec3 = { 2, 0, 0 }
                     }
@@ -2251,7 +2245,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Base_SmokeErode.Skarner_Rework.dds"
+                    erosionMapName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Base_SmokeErode.dds"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -2325,7 +2319,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_4x4Smoke_White.Skarner_Rework.tex"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_4x4Smoke_White.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
             }
@@ -2386,7 +2380,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = 41
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionOpacityGlancing: f32 = 0.300000012
                     reflectionFresnel: f32 = 0.300000012
@@ -2400,7 +2394,7 @@ entries: map[hash,embed] = {
                 isUniformScale: flag = true
                 texture: string = "ASSETS/Shared/Particles/Library/HitEffect/common_color-hold.dds"
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
-                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.Skarner_Rework.dds"
+                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.dds"
                     paletteSelector: embed = ValueVector3 {
                         constantValue: vec3 = { 2, 0, 0 }
                     }
@@ -2459,7 +2453,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = 41
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionOpacityGlancing: f32 = 0.300000012
                     reflectionFresnel: f32 = 0.300000012
@@ -2473,7 +2467,7 @@ entries: map[hash,embed] = {
                 isUniformScale: flag = true
                 texture: string = "ASSETS/Shared/Particles/Library/HitEffect/common_color-hold.dds"
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
-                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.Skarner_Rework.dds"
+                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.dds"
                     paletteSelector: embed = ValueVector3 {
                         constantValue: vec3 = { 2, 0, 0 }
                     }
@@ -2537,7 +2531,7 @@ entries: map[hash,embed] = {
                 isUniformScale: flag = true
                 texture: string = "ASSETS/Shared/Particles/Library/HitEffect/common_color-hold.dds"
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
-                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.Skarner_Rework.dds"
+                    paletteTexture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_colorGrad_16.dds"
                     paletteSelector: embed = ValueVector3 {
                         constantValue: vec3 = { 2, 0, 0 }
                     }
@@ -2555,44 +2549,64 @@ entries: map[hash,embed] = {
         name: string = "Characters/Skarner/Skins/Skin0/Materials/Skarner_LeftClaw"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Color_Mask_Texture"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "MatCap_Tex"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.Skarner_Rework.tex"
+                textureName: string = "Color_Mask_Texture"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
+            }
+            StaticMaterialShaderSamplerDef {
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "iridescentTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.Skarner_Rework.tex"
+                textureName: string = "iridescentTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScrollTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScrollTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.tex"
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScroll_Mask"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScroll_Mask"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture2"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "Diffuse_Texture2"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
         }
         paramValues: list2[embed] = {
+            StaticMaterialShaderParamDef {
+                name: string = "Iridescence_Pulse_Speed_Min"
+                value: vec4 = { 1, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Diffuse_Fade_Mask_Value"
+                value: vec4 = { 1, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "SpecularControl"
+                value: vec4 = { 0, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "SpecularColor"
+                value: vec4 = { 1, 1, 1, 1 }
+            }
             StaticMaterialShaderParamDef {
                 name: string = "Exclude_Mask_from_TintColor_Value"
                 value: vec4 = { 1, 0, 0, 0 }
@@ -2662,6 +2676,34 @@ entries: map[hash,embed] = {
             }
         }
         switches: list2[embed] = {
+            StaticMaterialSwitchDef {
+                name: string = "IRIDESCENCE_PULSE"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "FADE_DIFFUSE_ONLY_W_MASK"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "FADE_DIFFUSE_ONLY"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "SCROLL_TEXTURE_ONLY"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "ADDITIVE_ALPHA"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "ALPHA_BLEND_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "SPECULAR_ON"
+                on: bool = false
+            }
             StaticMaterialSwitchDef {
                 name: string = "EXCLUDE_MASK_FROM_TINTCOLOR"
                 on: bool = false
@@ -2755,44 +2797,64 @@ entries: map[hash,embed] = {
         name: string = "Characters/Skarner/Skins/Skin0/Materials/Skarner_Body"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Color_Mask_Texture"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "MatCap_Tex"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.Skarner_Rework.tex"
+                textureName: string = "Color_Mask_Texture"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
+            }
+            StaticMaterialShaderSamplerDef {
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "iridescentTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.Skarner_Rework.tex"
+                textureName: string = "iridescentTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScrollTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScrollTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.tex"
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScroll_Mask"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScroll_Mask"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture2"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "Diffuse_Texture2"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
         }
         paramValues: list2[embed] = {
+            StaticMaterialShaderParamDef {
+                name: string = "Iridescence_Pulse_Speed_Min"
+                value: vec4 = { 1, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Diffuse_Fade_Mask_Value"
+                value: vec4 = { 1, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "SpecularControl"
+                value: vec4 = { 0, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "SpecularColor"
+                value: vec4 = { 1, 1, 1, 1 }
+            }
             StaticMaterialShaderParamDef {
                 name: string = "Exclude_Mask_from_TintColor_Value"
                 value: vec4 = { 1, 0, 0, 0 }
@@ -2862,6 +2924,34 @@ entries: map[hash,embed] = {
             }
         }
         switches: list2[embed] = {
+            StaticMaterialSwitchDef {
+                name: string = "IRIDESCENCE_PULSE"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "FADE_DIFFUSE_ONLY_W_MASK"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "FADE_DIFFUSE_ONLY"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "SCROLL_TEXTURE_ONLY"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "ADDITIVE_ALPHA"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "ALPHA_BLEND_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "SPECULAR_ON"
+                on: bool = false
+            }
             StaticMaterialSwitchDef {
                 name: string = "EXCLUDE_MASK_FROM_TINTCOLOR"
                 on: bool = false
