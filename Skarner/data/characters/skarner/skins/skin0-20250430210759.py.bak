@@ -25,11 +25,7 @@ entries: map[hash,embed] = {
             }
         }
         loadscreen: embed = CensoredImage {
-<<<<<<< HEAD
             image: string = "ASSETS/Characters/Skarner/Skins/Base/SkarnerLoadScreen_0.dds"
-=======
-            image: string = "ASSETS/Characters/Skarner/Skins/Base/SkarnerLoadScreen_0.tex"
->>>>>>> 08209527271d0f064f3b5dfb9dccfd7ae47b03b4
         }
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
@@ -283,17 +279,10 @@ entries: map[hash,embed] = {
         }
         mContextualActionData: link = "Characters/Skarner/CAC/Skarner_Base"
         iconCircle: option[string] = {
-<<<<<<< HEAD
             "ASSETS/Characters/Skarner/HUD/Skarner_Circle_0.dds"
         }
         iconSquare: option[string] = {
             "ASSETS/Characters/Skarner/HUD/Skarner_Square_0.dds"
-=======
-            "ASSETS/Characters/Skarner/HUD/Skarner_Circle_0.tex"
-        }
-        iconSquare: option[string] = {
-            "ASSETS/Characters/Skarner/HUD/Skarner_Square_0.tex"
->>>>>>> 08209527271d0f064f3b5dfb9dccfd7ae47b03b4
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
             unitHealthBarStyle: u8 = 12
@@ -1583,7 +1572,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = -85
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionFresnel: f32 = 0.100000001
                     reflectionFresnelColor: vec4 = { 0, 0.2399939, 0.209994659, 0 }
@@ -2103,7 +2092,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = 40
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionOpacityGlancing: f32 = 0.300000012
                     reflectionFresnel: f32 = 0.100000001
@@ -2397,7 +2386,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = 41
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionOpacityGlancing: f32 = 0.300000012
                     reflectionFresnel: f32 = 0.300000012
@@ -2470,7 +2459,7 @@ entries: map[hash,embed] = {
                 }
                 pass: i16 = 41
                 reflectionDefinition: pointer = VfxReflectionDefinitionData {
-                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Nami_Skin58.dds"
+                    reflectionMapTexture: string = "ASSETS/Shared/Particles/Generic_White_Cubemap.SKINS_Lillia_Skin28.dds"
                     reflectionOpacityDirect: f32 = -1
                     reflectionOpacityGlancing: f32 = 0.300000012
                     reflectionFresnel: f32 = 0.300000012
@@ -2567,7 +2556,7 @@ entries: map[hash,embed] = {
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
                 textureName: string = "Color_Mask_Texture"
-                texturePath: string = "ASSETS/Shared/Materials/black.SKINS_Ivern_Skin30.dds"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
             }
             StaticMaterialShaderSamplerDef {
                 textureName: string = "Diffuse_Texture"
@@ -2597,7 +2586,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderSamplerDef {
                 textureName: string = "Diffuse_Texture2"
-                texturePath: string = "ASSETS/Shared/Materials/black.SKINS_Ivern_Skin30.dds"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
@@ -2767,7 +2756,7 @@ entries: map[hash,embed] = {
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
                 textureName: string = "Color_Mask_Texture"
-                texturePath: string = "ASSETS/Shared/Materials/black.SKINS_Ivern_Skin30.dds"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
             }
             StaticMaterialShaderSamplerDef {
                 textureName: string = "Diffuse_Texture"
@@ -2797,7 +2786,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderSamplerDef {
                 textureName: string = "Diffuse_Texture2"
-                texturePath: string = "ASSETS/Shared/Materials/black.SKINS_Ivern_Skin30.dds"
+                texturePath: string = "ASSETS/Shared/Materials/black.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1

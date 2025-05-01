@@ -243,29 +243,29 @@ entries: map[hash,embed] = {
             }
             rigPoseModifierData: list[pointer] = {
                 ConformToPathRigPoseModifierData {
-                    mStartingJointName: hash = 0xaf16cf46
-                    mEndingJointName: hash = 0xae16cdb3
+                    mStartingJointName: hash = "L_Tail_A"
+                    mEndingJointName: hash = "L_Tail_B"
                     mDefaultMaskName: hash = 0x7136e1bc
                     mMaxBoneAngle: f32 = 20
                     mDampingValue: f32 = 5
                 }
                 ConformToPathRigPoseModifierData {
-                    mStartingJointName: hash = 0xb8168555
-                    mEndingJointName: hash = 0xb516809c
+                    mStartingJointName: hash = "C_tail_a"
+                    mEndingJointName: hash = "C_Tail_b"
                     mDefaultMaskName: hash = 0x7136e1bc
                     mMaxBoneAngle: f32 = 24
                     mDampingValue: f32 = 6
                 }
                 ConformToPathRigPoseModifierData {
-                    mStartingJointName: hash = 0x4a782e84
-                    mEndingJointName: hash = 0x4d78333d
+                    mStartingJointName: hash = "R_Tail_A"
+                    mEndingJointName: hash = "R_Tail_B"
                     mDefaultMaskName: hash = 0x7136e1bc
                     mMaxBoneAngle: f32 = 22
                     mDampingValue: f32 = 4
                 }
                 ConformToPathRigPoseModifierData {
-                    mStartingJointName: hash = 0xbdd959d1
-                    mEndingJointName: hash = 0xb8168555
+                    mStartingJointName: hash = "Torso_DT"
+                    mEndingJointName: hash = "C_tail_a"
                     mDefaultMaskName: hash = 0x8a9731a7
                     mMaxBoneAngle: f32 = 25
                     mDampingValue: f32 = 5
@@ -285,7 +285,7 @@ entries: map[hash,embed] = {
             "ASSETS/Characters/Skarner/HUD/Skarner_Square_0.Skarner_Rework.dds"
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
-            unitHealthBarStyle: u8 = 10
+            unitHealthBarStyle: u8 = 12
         }
         mResourceResolver: link = "Characters/Skarner/Skins/Skin0/Resources"
     }
@@ -305,7 +305,7 @@ entries: map[hash,embed] = {
                 childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
                     childrenIdentifiers: list[embed] = {
                         VfxChildIdentifier {
-                            effectKey: hash = 0x7de19a64
+                            effectKey: hash = "Skarner_Q_Mis_Child"
                         }
                     }
                     childrenProbability: embed = ValueFloat {
@@ -927,7 +927,7 @@ entries: map[hash,embed] = {
                 childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
                     childrenIdentifiers: list[embed] = {
                         VfxChildIdentifier {
-                            effectKey: hash = 0xd893402a
+                            effectKey: hash = "Skarner_Q_mis_resolve_update"
                         }
                     }
                     childrenProbability: embed = ValueFloat {
@@ -976,7 +976,7 @@ entries: map[hash,embed] = {
                 birthRotationalVelocity0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, -480, 0 }
                 }
-                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Props_TX_CM.Skarner_Rework.dds"
+                texture: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Mat_Eye.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -1544,7 +1544,7 @@ entries: map[hash,embed] = {
                     mMesh: embed = VfxMeshDefinitionData {
                         mSimpleMeshName: string = "ASSETS/Characters/Skarner/Skins/Base/Particles/Skarner_Rework_Base_Q_Rock.Skarner_Rework.scb"
                         mSubmeshesToDraw: list[hash] = {
-                            0xc81958fa
+                            "stone"
                         }
                         mLockMeshToAttachment: bool = true
                     }
@@ -2064,7 +2064,7 @@ entries: map[hash,embed] = {
                 primitive: pointer = VfxPrimitiveAttachedMesh {
                     mMesh: embed = VfxMeshDefinitionData {
                         mSubmeshesToDraw: list[hash] = {
-                            0xc81958fa
+                            "stone"
                         }
                         mLockMeshToAttachment: bool = true
                     }
@@ -2361,7 +2361,7 @@ entries: map[hash,embed] = {
                 primitive: pointer = VfxPrimitiveAttachedMesh {
                     mMesh: embed = VfxMeshDefinitionData {
                         mSubmeshesToDraw: list[hash] = {
-                            0xa346f9c3
+                            "Claws"
                         }
                         mLockMeshToAttachment: bool = true
                     }
@@ -2430,7 +2430,7 @@ entries: map[hash,embed] = {
                 primitive: pointer = VfxPrimitiveAttachedMesh {
                     mMesh: embed = VfxMeshDefinitionData {
                         mSubmeshesToDraw: list[hash] = {
-                            0xa346f9c3
+                            "Claws"
                         }
                         mLockMeshToAttachment: bool = true
                     }
@@ -2503,7 +2503,7 @@ entries: map[hash,embed] = {
                 primitive: pointer = VfxPrimitiveAttachedMesh {
                     mMesh: embed = VfxMeshDefinitionData {
                         mSubmeshesToDraw: list[hash] = {
-                            0xa346f9c3
+                            "Claws"
                         }
                         mLockMeshToAttachment: bool = true
                     }
@@ -2555,38 +2555,38 @@ entries: map[hash,embed] = {
         name: string = "Characters/Skarner/Skins/Skin0/Materials/Skarner_LeftClaw"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Color_Mask_Texture"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "Color_Mask_Texture"
+                texturePath: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.Skarner_Rework.tex"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.Skarner_Rework.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "iridescentTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.Skarner_Rework.tex"
+                textureName: string = "iridescentTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.Skarner_Rework.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScrollTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScrollTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.Skarner_Rework.tex"
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScroll_Mask"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScroll_Mask"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.Skarner_Rework.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture2"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "Diffuse_Texture2"
+                texturePath: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
@@ -2755,38 +2755,38 @@ entries: map[hash,embed] = {
         name: string = "Characters/Skarner/Skins/Skin0/Materials/Skarner_Body"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Color_Mask_Texture"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "Color_Mask_Texture"
+                texturePath: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.Skarner_Rework.tex"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Rework_Base_TX_CM.Skarner_Rework.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "iridescentTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.Skarner_Rework.tex"
+                textureName: string = "iridescentTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Iridescent_TX_CM.Skarner_Rework.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScrollTex"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScrollTex"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_AdditiveScrollTexture_TX_CM.Skarner_Rework.tex"
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "AdditiveScroll_Mask"
-                textureName: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.Skarner_Rework.tex"
+                textureName: string = "AdditiveScroll_Mask"
+                texturePath: string = "ASSETS/Characters/Skarner/Skins/Base/Skarner_Base_Main_IdleMask_TX_CM.Skarner_Rework.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture2"
-                textureName: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
+                textureName: string = "Diffuse_Texture2"
+                texturePath: string = "ASSETS/Shared/Materials/black.Skarner_Rework.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
@@ -2928,7 +2928,7 @@ entries: map[hash,embed] = {
             "Skarner_R_cas_01" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_cas_01"
             "Skarner_R_cas_02" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_cas_02"
             "Skarner_R_cas_04" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_cas_04"
-            0x82f21dbf = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Pin"
+            "Skarner_E_Cas_Crater" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Pin"
             "Skarner_R_AoE_Impale" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_AoE_Impale"
             "Skarner_E_Interior_Wall_Booms" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Interior_Wall_Booms"
             0xe14b6a81 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Warning"
@@ -2936,30 +2936,30 @@ entries: map[hash,embed] = {
             "Skarner_P_Hit_Twice" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_P_Hit_Twice"
             "Skarner_W_Shield_Dissipate" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_W_Shield_Dissipate"
             "Skarner_W_Shield" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_W_Shield"
-            0xc990832c = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_W_Shockwave"
+            "Skarner_W_Shockwave_Resonance" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_W_Shockwave"
             "Skarner_W_Shockwave_tar" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_W_Shockwave_tar"
             "Skarner_E_Dash_Sonic_Boom" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Dash_Sonic_Boom"
             "Skarner_BA_tar_02" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_BA_tar_02"
             "Skarner_Q_Empowered_BA_AOE" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Empowered_BA_AOE"
             "Skarner_Q_Mis_AOE" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_AOE"
-            0xae429b1f = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_Rock"
+            "Skarner_P_Rock_2" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_Rock"
             "Skarner_Q_Mis_AOE_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_AOE_child"
-            0x77a9fca4 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_State_Rock"
+            "Skarner_Q_State_Claws" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_State_Rock"
             "Skarner_R_State_Grabbed" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_State_Grabbed"
-            0x4d403483 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Activate"
+            "Skarner_Q_Dirt_Particles" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Activate"
             0x20815887 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator"
             "Skarner_E_Grab_HitFX" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Grab_HitFX"
             "Skarner_E_Dash_GrabbingState" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Dash_GrabbingState"
             "Skarner_E_State_Grabbed" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_State_Grabbed"
-            0xc9090b58 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Indicator"
-            0x1d1cd3a2 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_HeldRock_Fizzle"
-            0xcc956a12 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_Line_child"
-            0xf43aee5b = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_child"
+            "Skarner_E_Traintrackend" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Indicator"
+            "Skarner_Q_Rock_Fizzle" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_HeldRock_Fizzle"
+            "Skarner_R_AoE_Line_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_Line_child"
+            "Skarner_R_Warning_Reverse_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_child"
             "Skarner_Q_State_ClawLeft" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_State_ClawLeft"
             "Skarner_Q_State_ClawRight" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_State_ClawRight"
             "Skarner_Q_Activate_Claws" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Activate_Claws"
-            0x7de19a64 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_Rock_Child"
-            0xd893402a = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_Rock_Fizzle"
+            "Skarner_Q_Mis_Child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_Rock_Child"
+            "Skarner_Q_mis_resolve_update" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Mis_Rock_Fizzle"
             "Skarner_Q_Empowered_BA_tar_01" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Empowered_BA_tar_01"
             "Skarner_Q_Empowered_BA_tar_01_Child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_Empowered_BA_tar_01_Child"
             "Skarner_BA_tar_01_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_BA_tar_01_child"
@@ -2973,18 +2973,18 @@ entries: map[hash,embed] = {
             "Skarner_E_Wall_Exit" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Wall_Exit"
             "Skarner_P_DoT" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_P_DoT"
             "Skarner_BA_tar_03" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_BA_tar_03"
-            0x9c419e56 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_AoE_Impale_Line_child"
+            "Skarner_R_AoE_Impale_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_AoE_Impale_Line_child"
             "Skarner_R_AoE_Impale_Line" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_AoE_Impale_Line"
             "Skarner_R_Impale_Tar" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Impale_Tar"
             "Skarner_R_Impale_Tar_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Impale_Tar_child"
             "Skarner_R_Suppress_Icon" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Suppress_Icon"
             "Skarner_W_Shield_Bubble_Child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_W_Shield_Bubble_Child"
             "Skarner_R_Impale_State_Skarner" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Impale_State_Skarner"
-            0xe50385f7 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_HeldRock_Fizzle_Child"
-            0x6adf6a56 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Pin_Child"
+            "Skarner_Q_Rock_Fizzle_Child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Q_HeldRock_Fizzle_Child"
+            "Skarner_E_Cas_Crater_Child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_E_Pin_Child"
             "Skarner_BA_tar_crit_01_child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_BA_tar_crit_01_child"
-            0xa541e0f9 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_Wave_Child"
-            0xcd5fa949 = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_Wave"
+            "Skarner_R_Wave_Child" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_Wave_Child"
+            "Skarner_R_Warning_Wave" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_R_Indicator_Wave"
             "Skarner_Emote_Taunt_02" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Emote_Taunt_02"
             "Skarner_Emote_Laugh_01" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Emote_Laugh_01"
             "Skarner_Emote_Recall" = "Characters/Skarner/Skins/Skin0/Particles/Skarner_Base_Emote_Recall"
